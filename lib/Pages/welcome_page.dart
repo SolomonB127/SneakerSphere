@@ -5,23 +5,29 @@ class WelcomePage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    // Get the screen height and width
+    final screenHeight = MediaQuery.of(context).size.height;
+    final screenWidth = MediaQuery.of(context).size.width;
+
     return Scaffold(
       backgroundColor: Colors.grey[200],
       body: Center(
         child: Padding(
-          padding: const EdgeInsets.symmetric(horizontal: 25.0),
+          padding: EdgeInsets.symmetric(horizontal: screenWidth * 0.1),
           child: Column(
+            mainAxisAlignment:
+                MainAxisAlignment.center, // Center the content vertically
             children: <Widget>[
               // Logo image
               Padding(
-                padding: const EdgeInsets.all(25.0),
+                padding: EdgeInsets.all(screenHeight * 0.03),
                 child: Image.asset(
                   '../assets/Images/logo.png',
-                  width: 200.0,
+                  width: screenWidth * 0.5,
                 ),
               ),
-              const SizedBox(
-                height: 48.0,
+              SizedBox(
+                height: screenHeight * 0.05,
               ),
 
               // Title
@@ -29,8 +35,8 @@ class WelcomePage extends StatelessWidget {
                 "Just Do It",
                 style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20),
               ),
-              const SizedBox(
-                height: 24,
+              SizedBox(
+                height: screenHeight * 0.03,
               ),
 
               // Sub-title
@@ -39,8 +45,8 @@ class WelcomePage extends StatelessWidget {
                 textAlign: TextAlign.center,
               ),
 
-              const SizedBox(
-                height: 48.0,
+              SizedBox(
+                height: screenHeight * 0.05,
               ),
 
               // Shop now link btn
@@ -52,7 +58,10 @@ class WelcomePage extends StatelessWidget {
                   decoration: BoxDecoration(
                       color: Colors.grey[900],
                       borderRadius: BorderRadius.circular(12)),
-                  padding: const EdgeInsets.all(25),
+                  padding: EdgeInsets.symmetric(
+                    vertical: screenHeight * 0.03,
+                    horizontal: screenWidth * 0.2,
+                  ),
                   child: const Center(
                     child: Text(
                       "Shop Now",
@@ -63,7 +72,7 @@ class WelcomePage extends StatelessWidget {
                     ),
                   ),
                 ),
-              )
+              ),
             ],
           ),
         ),
