@@ -16,13 +16,13 @@ class WelcomePage extends StatelessWidget {
           padding: EdgeInsets.symmetric(horizontal: screenWidth * 0.1),
           child: Column(
             mainAxisAlignment:
-                MainAxisAlignment.center, // Center the content vertically
+                MainAxisAlignment.center,
             children: <Widget>[
               // Logo image
               Padding(
                 padding: EdgeInsets.all(screenHeight * 0.03),
                 child: Image.asset(
-                  '../assets/Images/logo.png',
+                  'assets/Images/logo.png',
                   width: screenWidth * 0.5,
                 ),
               ),
