@@ -6,8 +6,9 @@ class HomePage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Scaffold(
-      bottomNavigationBar: BottomBar(),
+    return Scaffold(
+      backgroundColor: Colors.grey[200],
+      bottomNavigationBar: const BottomBar(),
     );
   }
 }
