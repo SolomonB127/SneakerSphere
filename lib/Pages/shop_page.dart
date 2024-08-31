@@ -29,10 +29,16 @@ class _ShopPageState extends State<ShopPage> {
                   icon: const Icon(Icons.search),
                 )),
           ),
-        )
+        ),
 
         // Message text
-
+        const Padding(
+          padding: EdgeInsets.symmetric(vertical: 25.0),
+          child: Text(
+            "You miss 100% of the shots you don’t take.",
+            style: TextStyle(color: Colors.black, fontWeight: FontWeight.bold),
+          ),
+        ),
         // Hot Picks/Trending
       ],
     );
