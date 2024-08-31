@@ -41,7 +41,7 @@ class WelcomePage extends StatelessWidget {
 
               // Sub-title
               const Text(
-                "Brand new Snickers and custom kicks made with premium quality.",
+                "Brand new sneakers and custom kicks made with premium quality.",
                 textAlign: TextAlign.center,
               ),
 
