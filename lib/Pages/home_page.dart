@@ -40,50 +40,71 @@ class _HomePageState extends State<HomePage> {
                 onPressed: () {
                   Scaffold.of(context).openDrawer();
                 },
-                icon: const Icon(Icons.menu))),
+                icon: const Padding(
+                  padding: EdgeInsets.only(left: 12.0),
+                  child: Icon(Icons.menu),
+                ))),
         backgroundColor: Colors.transparent,
         elevation: 0,
       ),
       drawer: Drawer(
         backgroundColor: Colors.black,
         child: Column(
+          mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: <Widget>[
             // Logo
-            DrawerHeader(
-                child: Image.asset(
-              "assets/Images/logo.png",
-              color: Colors.white,
-            )),
+            Column(
+              children: [
+                DrawerHeader(
+                    child: Image.asset(
+                  "assets/Images/logo.png",
+                  color: Colors.white,
+                )),
 
-            // pages
-            const Padding(
-              padding: EdgeInsets.only(left: 25.0),
-              child: ListTile(
-                leading: Icon(
-                  Icons.home,
-                  color: Colors.white,
+                // pages
+                const Padding(
+                  padding: EdgeInsets.only(left: 25.0),
+                  child: ListTile(
+                    leading: Icon(
+                      Icons.home,
+                      color: Colors.white,
+                    ),
+                    title: Text(
+                      "Home",
+                      style: TextStyle(color: Colors.white),
+                    ),
+                  ),
                 ),
-                title: Text(
-                  "Home",
-                  style: TextStyle(color: Colors.white),
+                const Padding(
+                  padding: EdgeInsets.only(left: 25.0),
+                  child: ListTile(
+                    leading: Icon(
+                      Icons.info,
+                      color: Colors.white,
+                    ),
+                    title: Text(
+                      "About",
+                      style: TextStyle(color: Colors.white),
+                    ),
+                  ),
                 ),
-              ),
+                const Padding(
+                  padding: EdgeInsets.only(left: 25.0),
+                  child: ListTile(
+                    leading: Icon(
+                      Icons.shopping_cart,
+                      color: Colors.white,
+                    ),
+                    title: Text(
+                      "Cart",
+                      style: TextStyle(color: Colors.white),
+                    ),
+                  ),
+                ),
+              ],
             ),
             const Padding(
-              padding: EdgeInsets.only(left: 25.0),
-              child: ListTile(
-                leading: Icon(
-                  Icons.info,
-                  color: Colors.white,
-                ),
-                title: Text(
-                  "About",
-                  style: TextStyle(color: Colors.white),
-                ),
-              ),
-            ),
-            const Padding(
-              padding: EdgeInsets.only(left: 25.0),
+              padding: EdgeInsets.only(left: 25.0, bottom: 25),
               child: ListTile(
                 leading: Icon(
                   Icons.logout,
