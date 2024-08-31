@@ -15,8 +15,7 @@ class WelcomePage extends StatelessWidget {
         child: Padding(
           padding: EdgeInsets.symmetric(horizontal: screenWidth * 0.1),
           child: Column(
-            mainAxisAlignment:
-                MainAxisAlignment.center,
+            mainAxisAlignment: MainAxisAlignment.center,
             children: <Widget>[
               // Logo image
               Padding(
@@ -24,6 +23,7 @@ class WelcomePage extends StatelessWidget {
                 child: Image.asset(
                   'assets/Images/logo.png',
                   width: screenWidth * 0.5,
+                  color: Colors.black,
                 ),
               ),
               SizedBox(
