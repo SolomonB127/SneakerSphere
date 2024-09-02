@@ -21,14 +21,17 @@ class ShoeTile extends StatelessWidget {
                 borderRadius: BorderRadius.circular(12),
                 child: Image.asset(
                   shoe.imgPath,
-                  width: 200.0,
+                  width: 150.0,
                 )),
 
             // description
-            Text(
-              shoe.description,
-              style: const TextStyle(
-                  color: Colors.grey, fontWeight: FontWeight.bold),
+            Padding(
+              padding: const EdgeInsets.symmetric(horizontal: 3.0),
+              child: Text(
+                shoe.description,
+                style: const TextStyle(
+                    color: Colors.grey, fontWeight: FontWeight.bold),
+              ),
             ),
 
             // price & details
@@ -61,7 +64,7 @@ class ShoeTile extends StatelessWidget {
 
                   // plus btn
                   Container(
-                      padding: const EdgeInsets.all(10),
+                      padding: const EdgeInsets.all(15),
                       decoration: const BoxDecoration(
                           color: Colors.black,
                           borderRadius: BorderRadius.only(
@@ -77,7 +80,6 @@ class ShoeTile extends StatelessWidget {
                 ],
               ),
             )
-            // add to cart button
           ]),
     );
   }
