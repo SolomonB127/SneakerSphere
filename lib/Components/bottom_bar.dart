@@ -14,6 +14,7 @@ class BottomBar extends StatelessWidget {
         tabActiveBorder: Border.all(color: Colors.black),
         tabBackgroundColor: Colors.grey.shade300,
         tabBorderRadius: 16.0,
+        gap: 8.0,
         mainAxisAlignment: MainAxisAlignment.center,
         onTabChange: (value) => onTabChange!(value),
         tabs: const [
