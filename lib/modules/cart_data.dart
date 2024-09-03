@@ -23,7 +23,22 @@ class Cart extends ChangeNotifier {
         name: "Air Force",
         price: "236",
         imgPath: "assets/Images/img4.png",
+        description: "Grip the court, dominate."),
+    Shoe(
+        name: "BMW M1",
+        price: "650",
+        imgPath: "assets/Images/img5.png",
         description: "Relentless pace, no limits."),
+    Shoe(
+        name: "SK8-HI",
+        price: "400",
+        imgPath: "assets/Images/img6.png",
+        description: "Dynamic moves, perfect fit."),
+    Shoe(
+        name: "Roshe",
+        price: "650",
+        imgPath: "assets/Images/img7.png",
+        description: "Precision and power, always."),
   ];
 
   // list of items in cart
