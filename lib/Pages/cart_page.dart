@@ -19,6 +19,7 @@ class _CartPageState extends State<CartPage> {
       builder: (context, value, child) => Padding(
         padding: const EdgeInsets.symmetric(horizontal: 25.0),
         child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
           // Heading
           children: <Widget>[
             const Text(
