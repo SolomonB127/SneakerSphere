@@ -71,7 +71,7 @@ The app uses the Provider package for state management and follows a modular app
 # Demo Video and Screenshots
 
 - **Demo Video:** A walkthrough of the app showcasing navigation and features. 
-[Watch the demo video](./lib/assets/video/SneakerSphere_demo.mp4)
+[Watch the demo video](./lib/video/SneakerSphere_demo.mp4)
 
 - **Screenshots:** Include images of the Welcome Page, 
 ![Welcome Page](./lib/assets/screenshots/Welcomepage.png)
