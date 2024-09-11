@@ -99,7 +99,11 @@ class _ShopPageState extends State<ShopPage> {
                       onTap: () => addShoeToCart(shoe),
                     );
                   },
-                ))
+                )),
+
+                const Padding(
+                  padding: EdgeInsets.only(top: 6.0, left: 25.0, right: 25.0),
+                )
               ],
             ));
   }
